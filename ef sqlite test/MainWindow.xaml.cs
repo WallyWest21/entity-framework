@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using ConsoleApp1;
 namespace ef_sqlite_test
 { 
     //https://stackoverflow.com/questions/29129796/no-entity-framework-provider-found-for-ef-6-and-sqlite-1-0-96-0
@@ -42,7 +42,7 @@ namespace ef_sqlite_test
                 db.Courses.Add(course);
                 db.SaveChanges();
             }
-
+            ConsoleApp1.Program.initiatedb();
         }
     }
 

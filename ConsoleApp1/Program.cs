@@ -7,9 +7,9 @@ using System.Collections.Generic;
 //http://www.talkingdotnet.com/create-sqlite-db-entity-framework-core-code-first/
 namespace ConsoleApp1
 {
-    class Program
+   public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             using (var dataContext = new CourseraContext())
             {
@@ -29,6 +29,16 @@ namespace ConsoleApp1
 
 
         }
+
+        public static void initiatedb()
+        {
+
+            using (var dataContext = new CourseraContext())
+            {
+               
+            }
+        }
+
         public class CourseraContext : DbContext
         {
             private static bool _created = false;
